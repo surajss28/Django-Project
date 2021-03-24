@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -125,7 +127,22 @@ STATIC_URL = '/static/'
 
 # added manually
 
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
     
 ]
+
+
+# S3 BUCKETS CONFIG
+
+AWS_ACCESS_KEY_ID = 'AKIAVEMZEDEHEJL77K7B'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME ='django-surajice-files'
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_LOCATION = 'static'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
+

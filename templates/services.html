@@ -6,75 +6,73 @@
 {% block body %}
 
 <head>
-  <link rel="stylesheet" type="text/css" href="{% static 'service.css' %}" </head>
+  <link rel="stylesheet" type="text/css" href="{% static 'ser.css' %}"> 
+</head>
 
 
   <section id="service">
-    <div class="col d-flex justify-content-center my-4">
-      <div class="card text-center bg-light text-dark border-dark" style="width: 60rem;">
-        <div class="card-body">
-          <h5 class="card-title">Welcome To Our Icecream Cart</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Select from our range of flavors</h6>
-          <p class="card-text">Currently we have an amazing offer for you .</p>
-          <p class="card-text">If you order the combo pack of Chocolate Icecream,
-            then one small cup icecream will get free that to of your choice
-            The combo pack contain one large choco-almond icecream and one large cone of chocolate fudge brownie .</p>
-          <a href="#" class="card-link">SurajIceCream.com</a>
-          <a href="#" class="card-link">SurajIceCream@gmail.com</a>
-        </div>
-      </div>
+    <!-- Example single danger button -->
+    <div class="d-flex justify-content-end ">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Menu
+      </button>
+      <ul class="dropdown-menu ">
+        <li><a class="dropdown-item text-primary " href="#">Black Cherry</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Butterscotch</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Caramel Apple Crunch</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Chocolate Fudge Brownie</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Chocolate Caramel Almond</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Coconut Almond Delight</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Strawberry</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Softy</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Caramel Banana</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Apple Cinnamon</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Guava Flavour</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Lichi Flavour</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Family-Pack</a> </li>
+        <li><a class="dropdown-item text-primary" href="#">Almond</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Black Raspberry</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Chocolate chip</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Butter Brickle</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Caramel Cashew</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Cherry Vanilla</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Cinnamon</a></li>
+        <li><a class="dropdown-item text-primary" href="#">Coconut Pineapple</a></li>
+      </ul>
     </div>
 
-    <div class="row row-cols-1 row-cols-md-4 g-4 my-4">
-      <div class="col">
-        <div class="card bg-primary text-white" style="width: 18rem;">
-          <ul>
-            <li><u>Black Cherry</u></li>
-            <li><u>Butterscotch</u></li>
-            <li><u>Caramel Apple Crunch</u></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card bg-primary text-white" style="width: 18rem;">
-          <ul>
-            <li><u>Chocolate Fudge Brownie</u></li>
-            <li><u>Chocolate Caramel Almond</u></li>
-            <li><u>Coconut Almond Delight</u></li>
-          </ul>
-        </div>
-      </div>
 
 
-      <div class="col">
-        <div class="card bg-primary text-white" style="width: 18rem;">
-          <ul>
-            <li><u>Strawberry Kiwi </u></li>
-            <li><u>Softy</u></li>
-            <li><u>Caramel Banana</u></li>
-          </ul>
-        </div>
-      </div>
 
 
-      <div class="col">
-        <div class="card bg-primary text-white" style="width: 18rem;">
-          <ul>
-            <li><u>Apple Cinnamon</u></li>
-            <li><u>Guava</u></li>
-            <li><u>Lichi</u></li>
-          </ul>
+
+
+
+
+
+
+    <div class="container">
+      <div class="d-flex justify-content-start my-15" style="margin-left:10px; margin-top:-15px;">
+        <div class="card text-center bg-light text-dark" style="width: 67rem;">
+          <div class="card-body">
+            <h1 class="card-title">Welcome To Our Icecream Cart</h1>
+            <h3 class="card-subtitle mb-2 text-muted">Select from our range of flavours</h3>
+            <p class="card-text">Currently we have an amazing offer for you .</p>
+            <p class="card-text">If you order the combo pack of Chocolate Icecream,
+              then one small cup icecream will get free that to of your choice
+              The combo pack contain one large choco-almond icecream and one large cone of chocolate fudge brownie .</p>
+          </div>
         </div>
       </div>
     </div>
 
 
 
-    <div class="row row-cols-1 row-cols-md-4 g-4 my-4">
+
+    <div class="row row-cols-1 row-cols-md-4 g-4 my-4" style="margin-left:10px;">
       <div class="col">
-        <div class="card bg-info border-dark" style="width: 18rem;">
-          <img src="/static/img/cherry.jpg" class="card-img-top" alt="...">
+        <div class="card bg-info " style="width: 18rem;">
+          <img src="{% static 'static/img/cherry.jpg' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Cherry Amaretto.</h5>
             <p class="card-text">We combine the unmatched flavor of black cherry,
@@ -86,8 +84,8 @@
 
 
       <div class="col">
-        <div class="card bg-info border-dark" style="width: 18rem;">
-          <img src="/static/img/chser.jpeg" class="card-img-top" alt="...">
+        <div class="card bg-info " style="width: 18rem;">
+          <img src="{% static 'static/img/chser.jpeg' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Chocolate Icecream</h5>
             <p class="card-text"> Enjoy that old fashioned ice cream parlor
@@ -98,21 +96,21 @@
       </div>
 
       <div class="col">
-        <div class="card bg-info border-dark" style="width: 18rem;">
-          <img src="/static/img/butter.jpg" class="card-img-top" alt="...">
+        <div class="card bg-info " style="width: 18rem;">
+          <img src="{% static 'static/img/butter.jpg' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Butter Brickle</h5>
             <p class="card-text">The warm flavor of the butter brickle pieces highlights
               the creaminess of this gourmet ice cream.
-              The caramel color promises a taste experience that is well lived up to.</p>
+              The caramel color promises taste experience that is good.</p>
           </div>
         </div>
       </div>
 
 
       <div class="col">
-        <div class="card bg-info border-dark" style="width: 18rem;">
-          <img src="/static/img/french.jpg" class="card-img-top" alt="...">
+        <div class="card bg-info " style="width: 18rem;">
+          <img src="{% static 'static/img/french.jpg' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">French Vanilla</h5>
             <p class="card-text">Our richest, most indulgent Vanilla inspired by the
@@ -126,6 +124,9 @@
 
 
     </div>
+
+
+
   </section>
 
   {% endblock body%}
