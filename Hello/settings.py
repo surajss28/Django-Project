@@ -23,13 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'c-n=9q4i4#!)vyehvjc*6yn2d_e8#mbe35^+l(=&8i1-#f-kr-'
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'c-n=9q4i4#!)vyehvjc*6yn2d_e8#mbe35^+l(=&8i1-#f-kr-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['myicecreamapp.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -43,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'storages',
 ]
 
 MIDDLEWARE = [
@@ -124,7 +122,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 # added manually
@@ -136,15 +133,5 @@ STATICFILES_DIRS = [
 ]
 
 
-# S3 BUCKETS CONFIG
 
-AWS_ACCESS_KEY_ID = os.environ.get('ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.environ.get('SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_BUCKET_NAME')
-
-AWS_S3_FILE_OVERWRITE = False
-AWS_DEFAULT_ACL = None
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-STATICFILES_LOCATION = 'static'
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
 
