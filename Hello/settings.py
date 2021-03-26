@@ -28,7 +28,7 @@ SECRET_KEY = 'c-n=9q4i4#!)vyehvjc*6yn2d_e8#mbe35^+l(=&8i1-#f-kr-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://myicecreamapp.herokuapp.com/']
+ALLOWED_HOSTS = []
 
 
 # Application definition
